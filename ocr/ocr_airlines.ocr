@@ -1,0 +1,13 @@
+tracking_code = input("Enter a tracking code: ")
+if tracking_code.length == 8 AND (tracking_code[0] == "P" OR tracking_code[0] == "Q") then
+    print("VALID")
+else
+    print("INVALID")
+endif
+
+luggage_weight = float(input("Enter luggage weight (in kg): "))
+if luggage_weight > 50 then
+    print("Error: luggage weight is over 50kg.")
+else
+    print("Price: £" + ceil(luggage_weight * 3))
+endif
